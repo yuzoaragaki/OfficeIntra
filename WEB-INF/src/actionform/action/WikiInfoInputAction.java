@@ -21,7 +21,7 @@ public class WikiInfoInputAction extends Action {
 
 		WikiInfoInputForm wikiInfoInputForm = (WikiInfoInputForm) actionform;
 
-		request.setAttribute("wikiInfoInputForm",wikiInfoInputForm);
+		request.setAttribute("wikiInfoInputForm", wikiInfoInputForm);
 		return map.findForward("success");
 	}
 }
