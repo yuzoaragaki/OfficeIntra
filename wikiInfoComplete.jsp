@@ -7,6 +7,7 @@
   </head>
   <body>
   <h3>完了画面</h3>
-     <p><bean:write name="wikiInfoConfirmForm" property="errorMsg" /></p>
+     <p><bean:write name="wikiInfoInputForm" property="errorMsg" /></p>
+     <p>登録完了しました</p>
   </body>
 </html:html>
