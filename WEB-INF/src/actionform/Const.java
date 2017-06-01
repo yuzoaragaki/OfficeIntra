@@ -9,5 +9,7 @@ public class Const {
 	public static final String ERROR_MSG_EXCEPTION = "システムエラーが発生しました。ログを参照してください。";
 	// メッセージ(ログイン失敗)
 	public static final String ERROR_MSG_LOGIN = "ログインに失敗しました。\nユーザーIDかPASSWORDか違います。";
+	// メッセージ(登録失敗)
+	public static final String ERROR_MSG_INSERT = "登録に失敗しました。";
 
 }

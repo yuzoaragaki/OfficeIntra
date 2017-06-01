@@ -25,6 +25,17 @@ public class Query {
 		}
 	}
 
+	public int getInsertResult(String sql) throws SQLException {
+		Statement stmt;
+		try {
+			stmt = getStatement();
+			return stmt.executeUpdate(sql);
+		} catch (SQLException e) {
+			throw new SQLException(e);
+		}
+	}
+
+
 	private Statement getStatement() throws SQLException {
 		try {
 			InitialContext initCon = new InitialContext();
