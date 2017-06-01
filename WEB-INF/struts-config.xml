@@ -67,15 +67,15 @@
    		</action>
 
    		<action path="/WikiInfoInputAction" type="actionform.action.WikiInfoInputAction" name="wikiInfoInputForm" scope="request" validate="true"
-                    input="/WikiInfoInput.jsp">
-      		<forward name="success" path="/WikiInfoConfirm.jsp" />
-      		<forward name="error" path="/WikiInfoInput.jsp" />
+                    input="/wikiInfoInput.jsp">
+      		<forward name="success" path="/wikiInfoConfirm.jsp" />
+      		<forward name="error" path="/wikiInfoInput.jsp" />
    		</action>
 
    		<action path="/WikiInfoConfirmAction" type="actionform.action.WikiInfoConfirmAction" name="wikiInfoConfirmForm" scope="request" validate="true"
-                    input="/WikiInfoConfirm.jsp">
-      		<forward name="success" path="/WikiInfoComplete.jsp" />
-      		<forward name="error" path="/WikiInfoConfirm.jsp" />
+                    input="/wikiInfoConfirm.jsp">
+      		<forward name="success" path="/wikiInfoComplete.jsp" />
+      		<forward name="error" path="/wikiInfoConfirm.jsp" />
    		</action>
     </action-mappings>
 

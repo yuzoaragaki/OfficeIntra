@@ -25,11 +25,5 @@
       <html:submit property="submit" value="Submit" />
     </html:form>
     <p><bean:write name="loginForm" property="errorMsg" /></p>
-
-    <div class="btn-group">
-    <button type="button" class="btn btn-primary">Left</button>
-    <button type="button" class="btn btn-default">Middle</button>
-    <button type="button" class="btn btn-default">Right</button>
-</div>
   </body>
 </html:html>

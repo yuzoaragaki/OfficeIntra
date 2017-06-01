@@ -35,6 +35,7 @@ public class WikiInfoConfirmAction extends Action {
 				containerMap = biz.wikiInfoInsert(wikiInfoConfirmForm);
 			} catch (Exception e) {
 				wikiInfoConfirmForm.setErrorMsg(Const.ERROR_MSG_EXCEPTION + ":" + e);
+				request.setAttribute("wikiInfoInputForm", new WikiInfoInputForm());
 				return map.findForward("error");
 			}
 

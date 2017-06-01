@@ -1,6 +1,7 @@
 package actionform.action;
 
 
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +21,7 @@ import api.CheckLogin;
 public class LoginAction extends Action {
 
 	public ActionForward execute (ActionMapping map, ActionForm actionform,
-			HttpServletRequest request, HttpServletResponse response) {
+			HttpServletRequest request, HttpServletResponse response) throws SQLException {
 
 		LoginForm loginForm = (LoginForm) actionform;
 
