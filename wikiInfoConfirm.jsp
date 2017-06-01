@@ -27,7 +27,6 @@
     </table>
 
  	<html:form action="/WikiInfoConfirmAction">
- 		<html:hidden property="writer" value="test" />
     	<html:submit property="submit" value="登録" />
     </html:form>
   </body>

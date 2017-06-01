@@ -6,7 +6,7 @@ import java.util.Map;
 
 import actionform.Const;
 import actionform.Key;
-import actionform.form.WikiInfoConfirmForm;
+import actionform.form.WikiInfoInputForm;
 import database.Query;
 import database.Sql;
 
@@ -18,12 +18,12 @@ public class WikiInfoInsert {
 
 	}
 
-	public Map<String, String> wikiInfoInsert (WikiInfoConfirmForm wikiInfoConfirmForm) throws SQLException {
+	public Map<String, String> wikiInfoInsert (WikiInfoInputForm wikiInfoInputForm) throws SQLException {
 
-		String writer = wikiInfoConfirmForm.getWriter();
-		String title = wikiInfoConfirmForm.getTitle();
-		String language = wikiInfoConfirmForm.getLanguage();
-		String tejyun1 = wikiInfoConfirmForm.getTejyun1();
+		String writer = wikiInfoInputForm.getWriter();
+		String title = wikiInfoInputForm.getTitle();
+		String language = wikiInfoInputForm.getLanguage();
+		String tejyun1 = wikiInfoInputForm.getTejyun1();
 
 		String sql = Sql.INSERT_USER_INFO_SQL;
 		sql = sql.replace("writer", writer);
@@ -42,8 +42,7 @@ public class WikiInfoInsert {
 				}
 			} catch (SQLException e) {
 				throw new SQLException(e);
-
-		}
+			}
 			return containerMap;
 	}
 }
