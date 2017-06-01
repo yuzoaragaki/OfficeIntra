@@ -41,8 +41,9 @@
 
     <form-beans>
 		<form-bean name="loginForm" type="actionform.form.LoginForm" />
+		<form-bean name="wikiInfoInputForm" type="actionform.form.WikiInfoInputForm" />
+		<form-bean name="wikiInfoConfirmForm" type="actionform.form.WikiInfoConfirmForm" />
     </form-beans>
-
 
 <!-- ========================================= Global Exception Definitions -->
 
@@ -63,6 +64,18 @@
                     input="/login.jsp">
       		<forward name="success" path="/myPage.jsp" />
       		<forward name="error" path="/login.jsp" />
+   		</action>
+
+   		<action path="/WikiInfoInputAction" type="actionform.action.WikiInfoInputAction" name="wikiInfoInputForm" scope="request" validate="true"
+                    input="/WikiInfoInput.jsp">
+      		<forward name="success" path="/WikiInfoConfirm.jsp" />
+      		<forward name="error" path="/WikiInfoInput.jsp" />
+   		</action>
+
+   		<action path="/WikiInfoConfirmAction" type="actionform.action.WikiInfoConfirmAction" name="wikiInfoConfirmForm" scope="request" validate="true"
+                    input="/WikiInfoConfirm.jsp">
+      		<forward name="success" path="/WikiInfoComplete.jsp" />
+      		<forward name="error" path="/WikiInfoConfirm.jsp" />
    		</action>
     </action-mappings>
 
