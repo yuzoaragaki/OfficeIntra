@@ -27,7 +27,7 @@
 -->
 
     <global></global>
-
+<!--
     <formset>
 
         <form name="loginForm">
@@ -69,5 +69,5 @@
             </field>
           </form>
     </formset>
-
+ -->
 </form-validation>
